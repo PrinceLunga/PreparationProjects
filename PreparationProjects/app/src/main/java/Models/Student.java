@@ -11,43 +11,59 @@ public class Student {
     String userName;
     String homeAddress;
     String cellNumber;
-    Date dateOfBirth;
-    Date dateCreated;
-    Date dateModified;
-    Date endDate;
+    String dateOfBirth;
+    String dateCreated;
+    String dateModified;
+    String endDate;
 
-    public Date getEndDate() {
+    public Student()
+    { }
+
+    public Student(String fullname, String email, String userName, String homeAddress, String cellNumber, String dateOfBirth, String dateCreated, String dateModified, String endDate) {
+
+        this.fullname = fullname;
+        this.email = email;
+        this.userName = userName;
+        this.homeAddress = homeAddress;
+        this.cellNumber = cellNumber;
+        this.dateOfBirth = dateOfBirth;
+        this.dateCreated = dateCreated;
+        this.dateModified = dateModified;
+        this.endDate = endDate;
+    }
+
+    public String getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
+    public void setEndDate(String endDate) {
         this.endDate = endDate;
     }
 
 
 
-    public Date getDateModified() {
+    public String getDateModified() {
         return dateModified;
     }
 
-    public void setDateModified(Date dateModified) {
+    public void setDateModified(String dateModified) {
         this.dateModified = dateModified;
     }
 
-    public Date getDateCreated() {
+    public String getDateCreated() {
         return dateCreated;
     }
 
-    public void setDateCreated(Date dateCreated) {
+    public void setDateCreated(String dateCreated) {
         this.dateCreated = dateCreated;
     }
 
 
-    public Date getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
